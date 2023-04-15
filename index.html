@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Joyeux Anniversaire</title> 
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+ <button id="confetti-btn">Surprise (click)</button>
+
+<div id="confetti-container"></div>
+
+<script>
+     const confettiBtn = document.getElementById('confetti-btn');
+const confettiContainer = document.getElementById('confetti-container');
+
+// Fonction pour générer une couleur aléatoire
+function randomColor() {
+  const r = Math.floor(Math.random() * 255);
+  const g = Math.floor(Math.random() * 255);
+  const b = Math.floor(Math.random() * 255);
+  return `rgb(${r}, ${g}, ${b})`;
+}
+
+confettiBtn.addEventListener('click', () => {
+  for (let i = 0; i < 500; i++) {
+    const confetti = document.createElement('div');
+    confetti.classList.add('confetti');
+    confetti.style.left = Math.random() * 100 + '%';
+    confetti.style.animationDelay = Math.random() * 2 + 's';
+    confetti.style.backgroundColor = randomColor(); // Utilisation de la couleur aléatoire
+    confettiContainer.appendChild(confetti);
+
+ setTimeout(() => {
+    const allConfetti = document.querySelectorAll('.confetti');
+    allConfetti.forEach(confetti => {
+      confetti.remove();
+    });
+  }, 4000);   
+  }
+});
+</script>
+
+<div class="banner">
+  <div class="container">
+  <h1>Joyeux Anniversaire </h1>
+  <h2>Maia la plus belle </h2>
+  </div>
+</div>
+
+
+
+<div class="container">
+
+          
+          <h3> BIOGRAPHIE  </h3>
+          <img class="avatar" src="images/bebe.jpg" width="150px" alt="BB">
+          <p> Née le 14 avril 2004, à Châtellerault, magnifique commune du Centre-Ouest de la France. Du nom de Julliot, elle grandit paisiblement avec deux parents, un grand frère et deux tortues. Bébé ses parents l'emmènent en van en voyage, elle découvre le monde et la vie. Puis arrivée en primaire, elle s'installe à Turin. Viva Italia ! Elle se passionne pour la danse, et forge à ses premières amitiés. Ensuite le collège, direction Canton en Chine : elle déménage une nouvelle fois. Là-bas, elle visite les pays alentours, se créant des souvenirs inoubliables. C'est l'heure de rentrer en 4ème, elle retourne en France : Versailles. Bienvenue dans le monde des richoux, et l'enfer du collège Nolhac, toutefois elle y rencontrera Madeleine et Brune. A 15 ans, commence ses années lycéenne à La Bruyère section art. Oui, nôtre Maia est une artiste. Trois ans marqués par la pandémie, mais surtout de nouvelles amies pour la vie : Fleur, Pauline, Manon et Lucie. Après avoir pleuré en cours de philosophie, et rigolé en cours d'histoire, elle décroche avec succès son baccalauréat. En 2022, Maia atteint la majorité, qu'elle fête le jour même avec ses amies Madeleine, Lucie et Léonard. Les rumeurs nous disent, que dans la hâte, elle s'est brûlée le doigt avec une bougie. Fin de l'année de terminal, début des études supérieures à Neoma. La vie parisienne commence, et de belles aventures l'attendent ...  </p> 
+
+
+          <h3>  ANEDOCTES DE TES COPINES </h3>
+          
+          <p>Le débrif des soirées chez toi à Versailles ou à La Rochelle, à chaque fois on est pliée de rire. Tu es ma colloc de lit à vie. Sinon tout les petits moments passés qui resteront gravé à jamais dans ma mémoire : cours de droit : génant, cours d'espagnol : grondée, cours d'anglais dodo, boulagerie : dégustation, cours de piscine : mort, soirée : ensemble sur le dancefloor, et plein d'autres. Lucie  </p>
+
+           <p>Une des fois où j’ai le plus ri dans ma vie : le soir de l’orgie à la Rochelle … c’était trop marrant on était au bout de nos vies mais surtout désemparées face à la situation haha. Je me souviens aussi qu’on a attendu 06h06 pour se coucher et ça c’est cool. Le concert de Marc Lavoine, un beau moment d’amitié en présence du King ! c’était à la fois marrant et en fait pas si mal et à refaire pour sa prochaine tournée. Madeleine. </p>
+
+           <p> J’ai fait ma journée d’appel il y’a quelques mois, en arrivant je me suis retrouvée au milieu d’un tas d’autres gens que je ne connaissais pas dans un endroit un peu glauque, et puis là j’ai vu Maia arriver, elle ne m’avait pas vu, mais j’avais un grand sourire aux lèvres parce que ça rendrait forcément cette journée moins longue et plus fun. Elle elle ne m’avait pas vu mais quand je suis allée lui faire un coucou on était toutes les deux très contentes de se voir et de passer la journée ensemble. On a bien rigolé et on a passé de bons moments notamment à l’heure du dej, c’était vraiment très sympa. Et quelques jours plus tard on était au bar à place dum et puis on a vu le militaire qui avait animé notre journée d’appel arriver et s’installer autour d’une table avec des amis, on a explosé de rire avec Maia et on l’a vu boire avec ses potes toute la soirée. Fleur</p>
+
+           <p> Je me rappel quand on était au collége, au musée du Bourget, pendant toute la sortie on avait joué au hotesse de l'air. Tu t'appelais Jessica, et nous Cassandra et Vanessa. C'était trop marrant, un de mes meilleurs souvenirs. Brune </p>
+
+
+
+
+
+         
+</div>
+
+    <h3>ALBUM</h3>
+
+<h4>MAIA ET SES COPINES</h4>
+
+<ul class="gallery">
+  
+  <li><img src="images/copine2.png"></li>
+  <li><img src="images/ami.png" ></li>
+  <li><img src="images/copine1.png" ></li>
+  <li><img src="images/ami1.png" ></li>
+  <li> <img src="images/ami3.png" ></li>
+  <li> <img src="images/copp.png" ></li>
+  <li> <img src="images/cops1.png" ></li>
+  <li> <img src="images/cops.png" ></li>
+  
+</ul>
+
+<h4>MAIA A L'ECOLE</h4>
+
+<ul class="école">
+  <li><img src="images/dodo.png" ></li>
+  <li><img src="images/bal.jpeg" ></li>
+  <li><img src="images/t.jpeg" ></li>
+  <li><img src="images/bac.jpeg" alt="Cop's"></li>
+  <li> <img src="images/g.jpeg" ></li>
+  <li><img src="images/bibli.jpeg" ></li>
+  <li><img src="images/mad.jpeg" ></li>
+  <li><img src="images/cant.jpeg" ></li>
+
+</ul>
+
+<h4>MAIA SEXY</h4>
+
+<ul class="sexy">
+  
+<li> <img src="images/sexy.png"  alt="Cop's"></li>
+  <li><img src="images/sex3.png" ></li>
+  <li><img src="images/sexy3.jng.jpeg" ></li>
+  <li><img src="images/sexi.png" ></li>
+  <li><img src="images/sexi1.png" ></li>
+  <li><img src="images/ss.png" ></li>
+  <li><img src="images/do.png" ></li>
+   <li><img src="images/sexo.jpeg" ></li>
+  <li><img src="images/ses.png" ></li>
+  <li><img src="images/se.png" ></li>
+  <li><img src="images/sa.png" ></li>
+  <li><img src="images/maq.png" ></li>
+  <li><img src="images/so.png" ></li>
+</ul> 
+
+<h4>MAIA DRAMA</h4>
+  
+ <ul class="drama">
+  <li><img src="images/drame.jpeg"></li>
+  <li><img src="images/drama.png"  alt="Cop's"></li>
+  <li><img src="images/dramaa.png" ></li> 
+  <li><img src="images/drama2.png"></li>
+</ul> 
+ 
+ <h4>MAIA AU CAFE</h4>
+  
+ <ul class="drama">
+  <li><img src="images/ca.png"></li>
+  <li><img src="images/ca1.png"></li>
+  <li><img src="images/caf.png"></li>
+  <li><img src="images/caféé.png"></li>
+  <li><img src="images/p.jpeg"></li>
+</ul> 
+
+<h3>SITES FAVORIS</h3>
+
+  <div class="btn-blue">
+      <a href="https://www.vogue.fr" target="blank" class="btn-blue"> Vogue </a> </div> 
+  
+  <div class="btn-blue">
+    <a href="https://www.miumiu.com/lu/fr.html" class="btn-blue" target="blank"> Miu Miu </a></div> 
+
+  <div class="btn-blue">
+    <a href="https://fr.rouje.com" class="btn-blue" target="blank"> Rouje Paris </a> </div>  
+
+  <div class="btn-blue">
+    <a href="https://eu.brandymelville.com" class="btn-blue" target="blank"> Brandy Melville </a> </div>   
+  
+  <div class="btn-blue">
+    <a href="https://www.sephora.fr" class="btn-blue" target="blank"> Sephora</a></div> 
+
+  <div class="btn-blue">
+  <a href="https://www.sonnyangel-france.com" class="btn-blue" target="blank"> Sonny Angel </a> </div> 
+     
+  <div class="btn-blue">
+    <a href="https://www.muji.eu/fr/" class="btn-blue" target="blank"> Muji </a></div> 
+
+  <div class="btn-blue">
+    <a href="https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/coree-du-sud/" class="btn-blue" target="blank"> Corée du Sud </a></div> 
+
+  <div class="btn-blue">
+    <a href="https://www.kfc.fr" class="btn-blue" target="blank"> KFC </a></div> 
+
+ 
+
+<h3> CADEAUX </h3>
+  <div class="lol">
+    <a href="https://alwaysjudgeabookbyitscover.com" class="btn-blue" target="blank"> 🥰 J'ADORE 🥰</a></div> 
+
+  <div class="lol">
+    <a href="https://www.omfgdogs.com" class="btn-blue" target="blank">🤪 FUN 🤪</a></div> 
+
+    <div class="lol">
+    <a href="https://thatsthefinger.com" class="btn-blue" target="blank">😘 SYMPA 😘</a></div> 
+
+
+
+
+
+
+
+</body>
+
+</html>

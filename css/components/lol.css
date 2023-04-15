@@ -1,0 +1,28 @@
+
+.lol-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.lol {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 200px; /* taille de base de la carte */
+  flex-grow: 1; /* proportion de croissance */
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0px 1px 1px rgba(103, 128, 159);
+  border-radius: 10px;
+  background-color: #FFDFEB;
+  text-align: center;
+}
+
+.lol img {
+  width: 300px;
+  height: 300px;
+  border-radius: 6px;
+  margin: 0 auto;
+  object-fit: cover;
+}
